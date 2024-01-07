@@ -27,12 +27,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Change @main to a specific commit SHA or version tag, e.g.:
-      # actions/hello-world-javascript-action@e76147da8e5c81eaf017dede5645551d4b94427b
-      # actions/hello-world-javascript-action@v1.2.3
       - name: Print to Log
         id: print-to-log
-        uses: actions/hello-world-javascript-action@main
+        uses: nipe0324/hello-world-javascript-action@main
         with:
           who-to-greet: ${{ inputs.who-to-greet }}
 ```
